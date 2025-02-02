@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Solutions</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77dd77 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    text-align: center;
+    font-size: 18px;
+}
+
+header .btn {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #77dd77;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header .btn:hover {
+    background: #66bb6a;
+}
+
+/* Sections */
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about p {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Services */
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.service h3 {
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #66bb6a;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+     </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Waste Management Solutions</h1>
+            <p>Efficient, Sustainable, and Eco-Friendly Waste Disposal</p>
+            <a href="#services" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are committed to providing innovative waste management solutions that help communities and businesses reduce their environmental footprint. Our services include recycling, composting, and waste-to-energy technologies.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Recycling</h3>
+                    <p>We offer comprehensive recycling programs to help you reduce waste and reuse materials.</p>
+                </div>
+                <div class="service">
+                    <h3>Composting</h3>
+                    <p>Our composting services turn organic waste into valuable compost for agriculture and landscaping.</p>
+                </div>
+                <div class="service">
+                    <h3>Waste-to-Energy</h3>
+                    <p>Convert non-recyclable waste into clean energy with our advanced waste-to-energy technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to learn more about our services, please get in touch with us.</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Waste Management Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

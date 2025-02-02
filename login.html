@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Waste Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background-image: url("https://media.istockphoto.com/id/1193095410/photo/plastic-ocean-pollution-and-microplastics.jpg?s=612x612&w=0&k=20&c=UxzAAlzE8l5U_0kcRT0nr8GWXfkImrsiRW3nLVKtj9w=");
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <p>Choose your role to continue:</p>
+
+            <!-- Tabs for Buyer and Seller -->
+            <div class="tabs">
+                <button class="tab-link active" data-tab="buyer">Buyer</button>
+                <button class="tab-link" data-tab="seller">Seller</button>
+            </div>
+
+            <!-- Buyer Login Form -->
+            <div id="buyer" class="tab-content active">
+                <form action="#" method="post">
+                    <div class="input-group">
+                        <label for="buyer-email">Email or Username</label>
+                        <input type="text" id="buyer-email" name="buyer-email" placeholder="Enter your email or username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="buyer-password">Password</label>
+                        <input type="password" id="buyer-password" name="buyer-password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn">Sign In as Buyer</button>
+                </form>
+            </div>
+
+            <!-- Seller Login Form -->
+            <div id="seller" class="tab-content">
+                <form action="#" method="post">
+                    <div class="input-group">
+                        <label for="seller-email">Email or Username</label>
+                        <input type="text" id="seller-email" name="seller-email" placeholder="Enter your email or username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="seller-password">Password</label>
+                        <input type="password" id="seller-password" name="seller-password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn">Sign In as Seller</button>
+                </form>
+            </div>
+
+            <!-- Links for Forgot Password and Sign Up -->
+            <div class="links">
+                <a href="#">Forgot Password?</a>
+                <a href="#">Create an Account</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle tab switching
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabLinks.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetTab = tab.getAttribute('data-tab');
+
+                // Remove active class from all tabs and contents
+                tabLinks.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(t => t.classList.remove('active'));
+
+                // Add active class to the clicked tab and corresponding content
+                tab.classList.add('active');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

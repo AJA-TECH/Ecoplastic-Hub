@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Home Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .profile-info {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .profile-info p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .profile-info p span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .withdraw-options {
+            margin-bottom: 20px;
+        }
+
+        .withdraw-options label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .withdraw-options select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .withdraw-options button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .withdraw-options button:hover {
+            background-color: #45a049;
+        }
+
+        .interest-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .interest-buttons button {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .interest-buttons button:first-child {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .interest-buttons button:first-child:hover {
+            background-color: #45a049;
+        }
+
+        .interest-buttons button:last-child {
+            background-color: #f44336;
+            color: #fff;
+        }
+
+        .interest-buttons button:last-child:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Seller Dashboard</h1>
+
+        <!-- User Profile Information -->
+        <div class="profile-info">
+            <p><span>Name:</span> John Doe</p>
+            <p><span>Email:</span> john.doe@example.com</p>
+            <p><span>Balance:</span> $1,500.00</p>
+            <p><span>Pending Payments:</span> $500.00</p>
+        </div>
+
+        <!-- Withdraw Options -->
+        <div class="withdraw-options">
+            <label for="withdraw-method">Select Withdraw Method:</label>
+            <select id="withdraw-method">
+                <option value="bank">Bank Transfer</option>
+                <option value="paypal">PayPal</option>
+                <option value="crypto">Crypto Wallet</option>
+            </select>
+            <button type="button" onclick="withdrawFunds()">Withdraw Funds</button>
+        </div>
+
+        <!-- Interest Buttons -->
+        <div class="interest-buttons">
+            <button type="button" onclick="showInterest()">Are You Interested?</button>
+            <button type="button" onclick="showNoInterest()">I'm Not</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Functionality -->
+    <script>
+        // Function to handle withdraw funds
+        function withdrawFunds() {
+            const method = document.getElementById('withdraw-method').value;
+            alert(`Withdraw request submitted via ${method}.`);
+        }
+
+        // Function to handle "Are You Interested?" button
+        function showInterest() {
+            alert("Thank you for showing interest! We will contact you shortly.");
+        }
+
+        // Function to handle "I'm Not" button
+        function showNoInterest() {
+            alert("No problem! Let us know if you change your mind.");
+        }
+    </script>
+</body>
+</html>

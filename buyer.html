@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Registration - Waste Management</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registration-container, .login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.registration-box, .login-box {
+    text-align: center;
+}
+
+.registration-box h2, .login-box h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.registration-box p, .login-box p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Links */
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+     </style>
+</head>
+<body>
+    <div class="registration-container">
+        <div class="registration-box">
+            <h2>Buyer Registration</h2>
+            <p>Please fill in the details below to create your account.</p>
+
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="company-name">Company Name</label>
+                    <input type="text" id="company-name" name="company-name" placeholder="Enter your company name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="registration-id">Registration ID</label>
+                    <input type="text" id="registration-id" name="registration-id" placeholder="Enter your registration ID" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="mnc-portal-id">MNC Portal ID</label>
+                    <input type="text" id="mnc-portal-id" name="mnc-portal-id" placeholder="Enter your MNC portal ID" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="state">State</label>
+                    <select id="state" name="state" required>
+                        <option value="">Select your state</option>
+                        <option value="state1">State 1</option>
+                        <option value="state2">State 2</option>
+                        <option value="state3">State 3</option>
+                        <!-- Add more states as needed -->
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+
+            <div class="links">
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
